@@ -26,8 +26,8 @@ header {
 }
 
 #profile {
-  width: 172px;
-  height: 172px;
+  width: 300px;
+  height: 300px;
   margin: 3em 0;
   border-radius: 15px;
 }
@@ -42,6 +42,7 @@ header {
   border-radius: 15px;
   position: relative;
   color: black;
+  font-size: 1.7em;
 }
 
 #talkArrow {
@@ -104,7 +105,7 @@ main {
   font-size: 0.9em;
 }
 
-.keepReading {
+.keepReading a{
   border-radius: 5px;
   background-color: #0F6ACA;
   color: rgb(240, 231, 234);
@@ -115,7 +116,22 @@ main {
   font-size: .8em;
   text-transform: uppercase;
   padding: 4px 6px;
+  /*margin: 4px 6px;*/
 }
+
+.keepReading a:link,
+.keepReading a:visited {
+  color: rgb(240, 231, 234);
+  text-decoration:none;
+}
+
+.keepReading a:hover,
+.keepReading a:active {
+  background-color: rgb(196, 133, 58);
+
+}
+
+
 
 #reactImage {
   height: 40px;
@@ -135,7 +151,7 @@ main {
   border-radius: 15px 15px 0 0;
 }
 
-footer {
+footer {8-i['k']
   margin-top: 0;
   background-color: black;
   padding-top: 0;
@@ -149,18 +165,33 @@ footer {
   margin-bottom: 0;
 }
 
-.twitterLogos {
+.logos {
   display: flex;
   justify-content: space-around;
   margin-top: 3em;
   margin-bottom: 5em;
 }
 
-img[alt^='Follow'] {
-  width: 5%;
-  height: 1.5%;
-  margin-left: 2em;
-  margin-right: 2em;
+.logoLink {
+  color:white;
+}
+
+.logoLink:hover {
+  color:rgb(25, 152, 193);
+}
+
+.logoLink:hover:after{
+    background: #333;
+    background: rgba(0,0,0,.8);
+    border-radius: 5px;
+    bottom: 26px;
+    color: #fff;
+    content: attr(title);
+    left: 20%;
+    padding: 5px 15px;
+    position: absolute;
+    z-index: 98;
+    width: 220px;
 }
 
 #copyright {
