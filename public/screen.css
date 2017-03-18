@@ -80,7 +80,7 @@ img[alt^='app']{
 }
 
 .appImage:focus, .appImage:hover, .appImage:active {
-  border: thin black solid;
+  border: 2px solid transparent;
   border-radius: 15px;
 }
 
